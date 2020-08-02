@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX JSON 餐廳應用</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="title">餐廳列表：餐餐具到好</h1>
+    <div id="restaurant">
+        <div id="box" v-for="d in datas">
+            <h1>餐廳：{{  d.品牌名稱 }}</h1>
+            <h3>地址：{{  d.聯絡地址 }}</h3>
+            <h3>電話：{{  d.連絡電話 }}</h3>
+            <h2>好康內容：{{  d.好康內容 }}</h2>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./restaurant.js"></script>
+</body>
+</html>
